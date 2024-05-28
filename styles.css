@@ -1,0 +1,37 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.content {
+    height: 1000px;
+    background-color: rgb(240, 243, 248);
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.scroll-section {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section1 { background-image: url('img/pic1.jpg'); }
+#section2 { background-image: url('img/pic2.jpg'); }
+#section3 { background-image: url('img/pic3.jpg'); }
+#section4 { background-image: url('img/pic4.jpg'); }
+#section5 { background-image: url('img/pic5.jpg'); }
+
+@media only screen and (max-device-width: 1366px) {
+    .scroll-section {
+        background-attachment: scroll;
+    }
+}
